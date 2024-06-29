@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AgregarTareaComponent } from './agregar-tarea/agregar-tarea.component';
+import { ListaTareasComponent } from './lista-tareas/lista-tareas.component';
+import { EliminarTareaComponent } from './eliminar-tarea/eliminar-tarea.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ListaTareasComponent, EliminarTareaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Todolist';
+  
 }
